@@ -19,13 +19,24 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
         <property name="maxIdle" value="10" />
         <property name="maxWait" value="500" />	
 	</bean>
-	
+	<!--
 	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
+	  -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" >
+		<property name="configLocation">
+		   <value>classpath:hibernate.cfg.xml</value>
+		</property>
+	</bean>
+	<!--
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate" >
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
 	
-    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager" >
+    <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager" >
     	<property name="dataSource" ref="dataSource" />
+    	<property name="sessionFactory" ref="sessionFactory" />
     </bean>
     
     <tx:annotation-driven transaction-manager="transactionManager" />
@@ -33,5 +44,5 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
     <bean id="taskDao" class="com.caeit.dao.TaskDao">
     	<property name="jdbcTemplate" ref="jdbcTemplate" />
     </bean>
-
+      -->
 </beans>

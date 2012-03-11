@@ -45,8 +45,14 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+		<buildCommand>
+			<name>com.genuitec.eclipse.hibernate.HibernateBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 	</buildSpec>
 	<natures>
+		<nature>com.genuitec.eclipse.hibernate.hibernatenature</nature>
 		<nature>org.eclipse.jem.workbench.JavaEMFNature</nature>
 		<nature>com.genuitec.eclipse.ast.deploy.core.deploymentnature</nature>
 		<nature>com.genuitec.eclipse.j2eedt.core.webnature</nature>
@@ -59,7 +65,12 @@
 		<link>
 			<name>spring-src</name>
 			<type>2</type>
-			<location>E:/resource/java/Spring/spring-framework-3.0.5.RELEASE/src</location>
+			<location>E:/resource/java/Spring/spring-framework-3.1.1.RELEASE/src</location>
+		</link>
+		<link>
+			<name>src-1</name>
+			<type>2</type>
+			<location>E:/resource/java/Spring/spring-framework-3.1.1.RELEASE/src</location>
 		</link>
 	</linkedResources>
 </projectDescription>

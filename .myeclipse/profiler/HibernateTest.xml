@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="profiler.settings.instrument.empty.methods">true</entry>
+<entry key="ProfilerCPUSettings_profile_runnables">true</entry>
+<entry key="profiler.settings.n.profiled.threads.limit">32</entry>
+<entry key="ProfilerCPUSettings_filter_type">2</entry>
+<entry key="profiler.settings.obj.alloc.stack.sampling.depth">-1</entry>
+<entry key="profiler.settings.instrument.method.invoke">true</entry>
+<entry key="profiler.settings.instr.scheme">1</entry>
+<entry key="ProfilerMemorySettings_track_every">10</entry>
+<entry key="ProfilerMemorySettings_mode">4</entry>
+<entry key="ProfilerCPUSettings_root_classes">com.caeit.dao.**
+com.caeit.db.**
+com.caeit.pojo.**
+com.caeit.service.**
+com.caeit.vo.**
+org.hibernate.**
+org.springframework.aop.**
+org.springframework.beans.**
+org.springframework.cache.ehcache.**
+org.springframework.context.**
+org.springframework.core.**
+org.springframework.dao.**
+org.springframework.ejb.access.**
+org.springframework.ejb.config.**
+org.springframework.ejb.interceptor.**
+org.springframework.ejb.support.**
+org.springframework.expression.**
+org.springframework.format.**
+org.springframework.http.**
+org.springframework.instrument.**
+org.springframework.jca.cci.**
+org.springframework.jca.context.**
+org.springframework.jca.endpoint.**
+org.springframework.jca.support.**
+org.springframework.jca.work.**
+org.springframework.jdbc.**
+org.springframework.jms.**
+org.springframework.jmx.**
+org.springframework.jndi.**
+org.springframework.mail.**
+org.springframework.mock.jndi.**
+org.springframework.mock.staticmock.**
+org.springframework.mock.web.**
+org.springframework.orm.**
+org.springframework.oxm.**
+org.springframework.remoting.**
+org.springframework.scheduling.**
+org.springframework.scripting.**
+org.springframework.stereotype.**
+org.springframework.test.**
+org.springframework.transaction.**
+org.springframework.ui.**
+org.springframework.util.**
+org.springframework.validation.**
+org.springframework.web.**
+</entry>
+<entry key="ProfilerCPUSettings_filter_value">com.caeit.dao.*,&#13;
+com.caeit.db.*,&#13;
+com.caeit.pojo.*,&#13;
+com.caeit.service.*,&#13;
+com.caeit.vo.*,&#13;
+org.hibernate.*,&#13;
+org.springframework.aop.*,&#13;
+org.springframework.beans.*,&#13;
+org.springframework.cache.ehcache.*,&#13;
+org.springframework.context.*,&#13;
+org.springframework.core.*,&#13;
+org.springframework.dao.*,&#13;
+org.springframework.ejb.access.*,&#13;
+org.springframework.ejb.config.*,&#13;
+org.springframework.ejb.interceptor.*,&#13;
+org.springframework.ejb.support.*,&#13;
+org.springframework.expression.*,&#13;
+org.springframework.format.*,&#13;
+org.springframework.http.*,&#13;
+org.springframework.instrument.*,&#13;
+org.springframework.jca.cci.*,&#13;
+org.springframework.jca.context.*,&#13;
+org.springframework.jca.endpoint.*,&#13;
+org.springframework.jca.support.*,&#13;
+org.springframework.jca.work.*,&#13;
+org.springframework.jdbc.*,&#13;
+org.springframework.jms.*,&#13;
+org.springframework.jmx.*,&#13;
+org.springframework.jndi.*,&#13;
+org.springframework.mail.*,&#13;
+org.springframework.mock.jndi.*,&#13;
+org.springframework.mock.staticmock.*,&#13;
+org.springframework.mock.web.*,&#13;
+org.springframework.orm.*,&#13;
+org.springframework.oxm.*,&#13;
+org.springframework.remoting.*,&#13;
+org.springframework.scheduling.*,&#13;
+org.springframework.scripting.*,&#13;
+org.springframework.stereotype.*,&#13;
+org.springframework.test.*,&#13;
+org.springframework.transaction.*,&#13;
+org.springframework.ui.*,&#13;
+org.springframework.util.*,&#13;
+org.springframework.validation.*,&#13;
+org.springframework.web.*</entry>
+<entry key="profiler.settings.istrument.getter.setter.methods">true</entry>
+<entry key="myeclipse.profiling.mode">0</entry>
+<entry key="ProfilerMemorySettings_stacktraces">-1</entry>
+<entry key="profiler.settings.sampling.interval">10</entry>
+<entry key="profiler.settings.cpu.profiling.type">0</entry>
+</properties>

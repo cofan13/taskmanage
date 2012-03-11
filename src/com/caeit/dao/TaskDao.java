@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.caeit.vo.Task;
 
-public class TaskDao {
+public class TaskDao implements BasicDao<Task>{
 	
 	private JdbcTemplate jdbcTemplate;
     
@@ -17,14 +17,19 @@ public class TaskDao {
 		return null;
 	}
 	@Transactional
-	public Task show(String args[]){
+	public Task show(int id){
 		Task task = new Task();
-		String sql="select * from ptp_task where id=1";
-		task=jdbcTemplate.queryForObject(sql, new RowMapper<Task>(){
-			public Task mapRow(ResultSet rs, int rowNum) throws SQLException{
+		String sql="select * from ptp_task where id="+id;
+		task=getJdbcTemplate().queryForObject(sql, new RowMapper<Task>(){
+			public Task mapRow(ResultSet rs, int rowNum){
 				Task tempTask=new Task();
-				tempTask.setName(rs.getString("name"));
-				tempTask.setDetail(rs.getString("detail"));
+				try {
+					tempTask.setName(rs.getString("name"));
+					tempTask.setDetail(rs.getString("detail"));
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				return tempTask;
 			}
 		});
@@ -32,8 +37,24 @@ public class TaskDao {
 	}
 	
 	
+	
+	@Override
+	public void update(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void delete(int[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public JdbcTemplate getJdbcTemplate() {
+		// TODO Auto-generated method stub
+		return jdbcTemplate;
+	}
+	@Override
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
 		this.jdbcTemplate=jdbcTemplate;
 	}
-	
 }

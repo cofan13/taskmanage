@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="profiler.settings.instrument.empty.methods">true</entry>
+<entry key="ProfilerCPUSettings_profile_runnables">true</entry>
+<entry key="ProfilerCPUSettings_filter_type">2</entry>
+<entry key="ProfilerMemorySettings_track_every">10</entry>
+<entry key="ProfilerMemorySettings_mode">4</entry>
+<entry key="ProfilerCPUSettings_root_classes">com.caeit.dao.**
+com.caeit.db.**
+com.caeit.pojo.**
+com.caeit.service.**
+com.caeit.vo.**
+org.springframework.aop.**
+org.springframework.beans.**
+org.springframework.cache.ehcache.**
+org.springframework.context.**
+org.springframework.core.**
+org.springframework.dao.**
+org.springframework.ejb.access.**
+org.springframework.ejb.config.**
+org.springframework.ejb.interceptor.**
+org.springframework.ejb.support.**
+org.springframework.expression.**
+org.springframework.format.**
+org.springframework.http.**
+org.springframework.instrument.**
+org.springframework.jca.cci.**
+org.springframework.jca.context.**
+org.springframework.jca.endpoint.**
+org.springframework.jca.support.**
+org.springframework.jca.work.**
+org.springframework.jdbc.**
+org.springframework.jms.**
+org.springframework.jmx.**
+org.springframework.jndi.**
+org.springframework.mail.**
+org.springframework.mock.jndi.**
+org.springframework.mock.staticmock.**
+org.springframework.mock.web.**
+org.springframework.orm.**
+org.springframework.oxm.**
+org.springframework.remoting.**
+org.springframework.scheduling.**
+org.springframework.scripting.**
+org.springframework.stereotype.**
+org.springframework.test.**
+org.springframework.transaction.**
+org.springframework.ui.**
+org.springframework.util.**
+org.springframework.validation.**
+org.springframework.web.**
+</entry>
+<entry key="ProfilerCPUSettings_filter_value">com.caeit.dao.*,
+com.caeit.db.*,
+com.caeit.pojo.*,
+com.caeit.service.*,
+com.caeit.vo.*,
+org.springframework.aop.*,
+org.springframework.beans.*,
+org.springframework.cache.ehcache.*,
+org.springframework.context.*,
+org.springframework.core.*,
+org.springframework.dao.*,
+org.springframework.ejb.access.*,
+org.springframework.ejb.config.*,
+org.springframework.ejb.interceptor.*,
+org.springframework.ejb.support.*,
+org.springframework.expression.*,
+org.springframework.format.*,
+org.springframework.http.*,
+org.springframework.instrument.*,
+org.springframework.jca.cci.*,
+org.springframework.jca.context.*,
+org.springframework.jca.endpoint.*,
+org.springframework.jca.support.*,
+org.springframework.jca.work.*,
+org.springframework.jdbc.*,
+org.springframework.jms.*,
+org.springframework.jmx.*,
+org.springframework.jndi.*,
+org.springframework.mail.*,
+org.springframework.mock.jndi.*,
+org.springframework.mock.staticmock.*,
+org.springframework.mock.web.*,
+org.springframework.orm.*,
+org.springframework.oxm.*,
+org.springframework.remoting.*,
+org.springframework.scheduling.*,
+org.springframework.scripting.*,
+org.springframework.stereotype.*,
+org.springframework.test.*,
+org.springframework.transaction.*,
+org.springframework.ui.*,
+org.springframework.util.*,
+org.springframework.validation.*,
+org.springframework.web.*</entry>
+<entry key="profiler.settings.istrument.getter.setter.methods">true</entry>
+<entry key="myeclipse.profiling.mode">0</entry>
+<entry key="ProfilerMemorySettings_stacktraces">-1</entry>
+</properties>

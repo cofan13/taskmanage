@@ -1,76 +1,115 @@
 package com.caeit.vo;
 
-public class Task {
+/**
+ * PtpTask entity. @author MyEclipse Persistence Tools
+ */
 
-  private int id;
-  private int pid;
-  private int plan_id;
-  private String name;
-  private String detail;
-  private String start_date;
-  private String end_date;
-  private int percentage;
-  private String finished;
+public class Task implements java.io.Serializable {
 
-  public Task() {
-    name="";
-    detail="";
-    start_date="";
-    end_date="";
-    finished="";
-  }
-  public int getId() {
-    return id;
-  }
-  public void setId(int id){
-    this.id = id;
-  }
-  public int getPid() {
-    return pid;
-  }
-  public void setPid(int pid){
-    this.pid = pid;
-  }
-  public int getPlan_id() {
-    return plan_id;
-  }
-  public void setPlan_id(int plan_id){
-    this.plan_id = plan_id;
-  }
-  public String getName() {
-    return name;
-  }
-  public void setName(String name){
-    this.name = name;
-  }
-  public String getDetail() {
-    return detail;
-  }
-  public void setDetail(String detail){
-    this.detail = detail;
-  }
-  public String getStart_date() {
-    return start_date;
-  }
-  public void setStart_date(String start_date){
-    this.start_date = start_date;
-  }
-  public String getEnd_date() {
-    return end_date;
-  }
-  public void setEnd_date(String end_date){
-    this.end_date = end_date;
-  }
-  public int getPercentage() {
-    return percentage;
-  }
-  public void setPercentage(int percentage){
-    this.percentage = percentage;
-  }
-  public String getFinished() {
-    return finished;
-  }
-  public void setFinished(String finished){
-    this.finished = finished;
-  }
+	// Fields
+
+	private long id;
+	private long pid;
+	private long planId;
+	private String name;
+	private String detail;
+	private String startDate;
+	private String endDate;
+	private long percentage;
+	private char finished;
+
+	// Constructors
+
+	/** default constructor */
+	public Task() {
+	}
+
+	/** full constructor */
+	public Task(long pid, long planId, String name,
+			String detail, String startDate, String endDate,
+			long percentage, char finished) {
+		this.pid = pid;
+		this.planId = planId;
+		this.name = name;
+		this.detail = detail;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.percentage = percentage;
+		this.finished = finished;
+	}
+
+	// Property accessors
+
+	public long getId() {
+		return this.id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public long getPid() {
+		return this.pid;
+	}
+
+	public void setPid(long pid) {
+		this.pid = pid;
+	}
+
+	public long getPlanId() {
+		return this.planId;
+	}
+
+	public void setPlanId(long planId) {
+		this.planId = planId;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDetail() {
+		return this.detail;
+	}
+
+	public void setDetail(String detail) {
+		this.detail = detail;
+	}
+
+	public String getStartDate() {
+		return this.startDate;
+	}
+
+	public void setStartDate(String startDate) {
+		this.startDate = startDate;
+	}
+
+	public String getEndDate() {
+		return this.endDate;
+	}
+
+	public void setEndDate(String endDate) {
+		this.endDate = endDate;
+	}
+
+	public long getPercentage() {
+		return this.percentage;
+	}
+
+	public void setPercentage(long percentage) {
+		this.percentage = percentage;
+	}
+
+	public char getFinished() {
+		return this.finished;
+	}
+
+	public void setFinished(char finished) {
+		this.finished = finished;
+	}
+
 }
